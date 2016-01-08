@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Richa</title>
+<link rel="stylesheet" href="js/animsition/animsition.min.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+
+body{
+margin:0;/*Important for whole body to touch whole page view.. */
+padding:0;/* No Effect */ 
+font-family:Calibri ;
+}
+
+abbr{
+opacity:0.85;
+cursor:pointer;
+}
+ nav{
+    opacity:1;
+    position:fixed;
+	overflow:hidden;
+	background-color:#222;
+	top:0;
+	right:0;
+	width:200px;
+	height:100%;
+	
+	
+}
+ nav ul{
+	list-style-type:none;
+	overflow:hidden;
+	line-height:77px;
+	margin:0;/* very important as there is some default padding*/
+	padding:0;
+}
+ nav ul li{ 
+text-align:center;
+}
+ nav ul li a {
+	display:block;
+	text-decoration:none;
+	color:white;
+	padding: 8px 10px 8px 16px;
+	transition:ease background-color 1s;
+}
+
+nav ul li a span{
+	font-size:1em;
+text-align:center;
+	text-decoration:none;
+	color:white;
+	font-family:Calibri ;
+	
+	
+}
+
+nav ul li a:hover{
+  background-color:#555;
+  color:white;
+  
+}
+
+nav a .fa, nav a:hover span { display: none }
+
+nav a:hover .fa { display: inline ;text-decoration:none;}
+
+
+.container{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+overflow-y:scroll;
+font-size:1.05em;
+/*font-family:courier;*/
+overflow-x:scroll;
+
+
+}
+
+.page1{
+ padding-left:100px;
+ padding-top:20px;
+ top:0;
+ background-color:#D5D5D5;
+ color:black;
+ width:100%;
+ height:550px;
+}
+
+
+.page2{
+ padding-left:100px;
+ padding-top:10px;
+ background-color:white;
+ width:100%;
+ height:600px;
+
+}
+
+.page3{
+ padding-left:100px;
+ padding-top:10px;
+ background-color:#FBF2E2;
+ width:100%;
+ height:600px;
+}
+
+.page4{
+ padding-left:100px;
+ padding-top:10px;
+ background-color:white;
+ width:100%;
+ height:800px;
+}
+
+.page5{
+ padding-left:100px;
+ padding-top:10px;
+ width:100%;
+ height:600px;
+ background-color:#F3EFE0;
+}
+
+.page6{
+ padding-left:100px;
+ padding-top:10px;
+ background-color:#434242;
+ width:100%;
+ height:600px;
+ color:rgba(255,255,255,0.6);
+ font-family:
+}
+
+.page6 a{
+color:#FFFFFF;
+opacity:0.7;
+text-align:right;
+verticle-align:middle;
+text-decoration:none;
+margin-right:100px;
+/*DONT USE PADDING-LEFT OR PADDING-RIGHT ->
+                     WHOLE BLOCK WILL BE CLICKABLE*/
+}
+
+
+.page6 a:hover{
+opacity:1;
+}
+
+.page6 img{
+padding:2px;
+}
+
+.active{
+  background-color:#555;
+  color:white;
+  
+}
+
+
+h1 {color:#22A39F;
+ font-family:Gulim;
+ font-weight:700;
+ font-size:3em;
+ margin-bottom: 20px; 
+ border-bottom : 1.5px solid #FFFFFF;
+ width:20%;
+ text-align:right;
+ border-bottom-color: rgba(255,255,255,0.2);
+ }
+ 
+ span{
+color:#03D1E0;
+font-size:1.3em;
+font-weight:200;
+font-family:gulim;
+margin:0px;
+padding:0px;
+
+}
+
+.ableList ul{
+list-style-type:none;
+padding:0px;
+margin:2;
+ }
+ 
+.t{
+color: #727878;
+}
+
+
+.sect1 , .sect2 , .sect3{
+float:left;
+width:200px
+}
+
+.sect4,.sect5{
+float:left;
+width:400px;
+}
+
+.sect4 a ,.sect5 a , .sect3-5 a{
+color:#f65858;
+opacity:0.6;
+text-decoration:none;
+}
+
+.sect4 a:hover ,.sect5 a:hover , .sect3-5 a:hover{
+opacity:1;
+}
+
+.sect3-5
+{
+margin-bottom:200px;
+}
+
+.abilitiesSect{
+line-height:40px
+}
+
+.c{
+line-height:30px;
+color: #897C66;
+}
+
+hr{
+width:700px;
+float:left;
+}
+
+#me{
+color:black;
+font-family:courier;
+}
+
+.darkback{
+color:gray;
+opacity:1;
+}
+
+
+.a1{
+float:left;
+margin-top:100px;
+text-decoration:none;
+color:gray;
+opacity:0.9;
+}
+
+.a1:hover{
+opacity:1;
+}
+
+.aP a{
+
+color:#527177;
+text-decoration:none;
+opacity:0.8;
+}
+
+.aP a:hover{
+opacity:1;
+}
+
+
+.contact_icons_codechef{
+border-radius: 5px 5px ;
+width:35px;
+height:35px;
+}
+
+.contact_icons_yourshot{
+width:100px;
+height:19px;
+border-radius:5px 5px ;
+}
+
+#end{
+margin-right:500px;
+text-align:right;
+}
+
+
+
+</style>
+</head>
+
+<body id="bb">       
+  <div class="animsition">
+   <div class="container">
+     
+	  <div class="page1" id="profile_1">
+	    <h1 id="profile" >Profile</h1>
+		 <p id="me">
+		  <b style="color:rgba(200,90,90,1);font-family:Gill Sans MT Condensed;font-size:1.3em;padding-right:2px">Richa</b> III<sup>rd</sup> Year,B.Tech,<br/>
+	       Computer Science and Engineering,<br/>
+           Harcourt Butler Technological Institute,<br/> 
+		   Kanpur-208002,<br/>
+		   Uttar Pradesh,India;
+		 </p>
+		 <p class="darkback">
+          I	am interested in Data Structures , Algorithms and Web Designing.<br/>
+          I enjoy competetive programming, and also love to do 
+		  <br/>photography ,sketching and solving rubik's cube.	  
+	    </p>
+	    <a class="a1" href="RESUMECV_Richa.pdf" target="_blank"><img src="icon/pdficon2.png" alt="pdf" id="pdfimg"></img>Resume</a>
+				
+       </div>
+     
+	  <div class="page2" id="abilities_2">
+	    <h1 id="abilities" style="border-bottom-color:rgba(0,0,0,0.4)">Abilities</h1>
+		<div class="abilitiesSect">
+		<section class="ableList sect1">
+		   <span>Skills</span>
+		    <ul class="t">
+             <li> C </li>
+             <li> C++ </li>
+             <li> Java </li>
+             <li> HTML</li>
+			 <li> CSS </li>
+			 <li> JavaScript</li>
+			 <li> JQuery </li> 
+			 <li> SQL </li> 
+			</ul>
+		</section>
+		
+		<section class="ableList sect2 t">
+		   <span>Tools </span>
+		   <ul>
+		     <li>Microsoft Office</li>
+		     <li>Gimp 2</li>
+		     <li>Picasa 3</li>
+		   </ul>
+		</section>
+		
+		<section class="ableList sect3 t">
+		   <span>Platform </span>
+		   <ul>
+		     <li>Microsoft Windows 7,8</li>
+		   </ul>
+		</section>
+		</div>
+      </div>
+	  
+	  <div class="page3" id="projects_3">
+	    <h1 id="projects" style="border-bottom-color:rgba(0,0,0,0.4)" >Projects</h1>
+      <section class="sect3-5">
+	   
+	   <p><i class="fa fa-github" style="font-size:40px;"></i></li>
+	   <a href="https://github.com/richagithub" target="_blank">https://github.com/richagithub</a>
+	   </p>
+      </section>
+	  </br>
+	  <hr >
+	  
+	  <div style="margin-top:0px">
+	  <h2 style="color:#22A39F;font-family:gulim;font-size:1.5em;text-align:left;width:500px;margin:0;padding:0;" > Competetive Programming </h2>
+	  <br/>
+	  <section class="sect4" >
+	   <ul type="none" style="margin:0;padding:0;">
+	   <li><strong>Codechef</strong></li>
+	   <li class="t">Global Rank 2152</li>
+	   <li style="font-size:0.75em">Country Rank 1540 </li>
+	   <li><a href="https://www.codechef.com/users/richacode" target="_blank">https://www.codechef.com/users/richacode</a></li>
+	   </ul>
+      </section>	  
+
+	  <section class="sect5">
+	   <ul type="none" style="margin-top:0;padding:0;">
+	   <li><strong>International Online Programming Contest (IOPC)</strong></li>
+	   <li class="t">Teckriti'15</li>
+	   <li><a href="https://www.codechef.com/teams/view/rrcode" target="_blank">https://www.codechef.com/teams/view/rrcode</a></li>
+	   </ul>
+      </section>
+	  </div>
+	  
+	  </div>
+	  
+	  <div class="page4" id="awards_4">
+	    <h1 id="awards" style="border-bottom-color:rgba(0,0,0,0.4)" >Awards</h1>
+         <section >
+		 <table style="border-spacing:15px 5px;margin-bottom:20px">
+    <tr> <td><strong>6<sup>th</sup> National Cyber Olympiad 2007</strong></td>   <td class="t">2<sup>nd</sup>(School Rank) </td>  <td class="t"><abbr title="All India Rank">AIR</abbr>  - 3690</td></tr>  
+    <tr> <td><strong>Mindsweeper Coding contest</strong></td>  <td class="t">1<sup>st</sup></td>   <td class="t">Expanse-Zonal Cognizance-2015 (Kanpur Zone),<abbr title="Indian Institute of Technology">IIT</abbr>Roorkee</td></tr>
+	<tr> <td><strong>Debugging Contest</strong></td>           <td class="t">2<sup>nd</sup></td>   <td class="t">Incord'14 Technical Fest at <abbr title="Harcourt Butler Technological Institute">HBTI</abbr>, Kanpur </td></tr>
+	<tr> <td><strong>CodeOptimization contest</strong></td>    <td class="t">2<sup>nd</sup></td>   <td class="t">Incord'15 Technical Fest at <abbr title="Harcourt Butler Technological Institute">HBTI</abbr> ,Kanpur</td></tr>
+	<tr> <td><strong>Coding Quiz</strong></td>                 <td class="t">2<sup>nd</sup></td>   <td class="t">Literary Club, Odyssey Cultural Fest'14, <abbr title="Harcourt Butler Technological Institute">HBTI</abbr>, Kanpur</td></tr>
+	<tr> <td><strong>CodeStorm coding event</strong></td>      <td class="t">2<sup>nd</sup></td>   <td class="t">Resonance'15 at <abbr title="Harcourt Butler Technological Institute">HBTI</abbr> ,Kanpur.</td></tr>
+	<tr> <td><strong><abbr title="National Level Science Talent Search Examination">NSTSE</abbr> 2012</strong></td>                <td class="t" colspan="2"> <abbr title="All India Rank">AIR</abbr> - 2168</td></tr>
+    <tr> <td><strong><abbr title="National Level Science Talent Search Examination">NSTSE</abbr> 2010</strong></td>                <td class="t" colspan="3"> <abbr title="All India Rank">AIR</abbr> - 3086</td></tr>
+	<tr> <td style="verticle-align:bottom;padding-top:4px"><strong>HDFC Bank Meritus Scholarships, 2009</strong></td>  
+        	<td class="t" colspan="2" style="verticle-align:top" >Reached 2<sup>nd</sup> level</td></tr>
+	
+		</table>
+	 <br/>
+	 <br/>
+	 <br/>
+	 <span style="padding-left:10px;font-family:gulim;font-size:1.2em;color:#22A39F;font-weight:550;">Participations</span>
+       <ul class="t aP" type="none" style="padding:0px 10px 10px 10px;line-height:25px">
+	<li><em>"Vision Botics" </em>- a Sixth sense Technologies Workshop conducted   by   i3indya Technologies 2014 in Incord'14, HBTI ,Kanpur</li>
+	<li>Participated in <b>Kishor Vaigyanik Protsahan Yojna (KVPY)</b> 2011.</li>
+	<li>Participated in drawing contests, elocutions and quizzes in school. </li>
+	<li>Participated in <em>Almond Might Essay Competition</em>, 2006.</li>
+	<li>Photography contests : <strong>Through Your Lens in Techkriti '15 , <abbr title="Indian Institute of Technology">IIT</abbr> Kanpur</strong>,<br>
+                             	<strong><a  href="http://yourshot.nationalgeographic.com/profile/549611/" target="_blank">
+								YourShot in National Geographic
+								<i class="fa fa-external-link-square"></i>
+								</a></strong>.</li>
+	   </ul>
+		 </section>
+	  </div>
+	  
+	  <div class="page5" id="courses_5">
+	    <h1 id="courses" style="border-bottom-color:rgba(0,0,0,0.4)">Courses</h1>
+      <section>
+	     <ul type="none" class="c">
+		 <li>Data Structures</li>
+		 <li>Web Technology</li>
+		 <li>Software Engineering</li>
+		 <li>Design & Analysis of Algorithm</li>
+		 <li>Computer Organisation & Architecture</li>
+		 <li>Priciples of Programming Languages</li>
+		 <li>DataBase Management Systems</li>
+		 <li>Theory of Computation</li>
+		 <li>Discrete Mathematics</li>
+		 <li>Operating Systems</li>
+		 <li>Digital Logic</li>
+		 </ul>
+	  </section>
+	  </div>
+	  
+	  <div class="page6" id="contact_6">
+	    <h1 id="contact" >Contact</h1>
+		
+		<section  id="end" style="padding:40px">
+		<p style="font-size:2em;margin-bottom:0;
+		     padding-right:35px;
+		     border-bottom : 1px solid #FFFFFF;
+			 border-bottom-color:rgba(255,255,255,0.1);">Richa</p>
+		<br/>
+		
+		<a href="richa09me@gmail.com">
+		   richa09me@gmail.com
+		   <i class="fa fa-envelope" style="font-size:35px";></i> 
+		</a> 
+    <br/>
+		<a href="https://in.linkedin.com/in/richa-6ba580ab">
+	      	in.linkedin.com/in/richa
+	         <i class="fa fa-linkedin-square" style="font-size:40px";></i> 
+    	</a>
+	
+	<br/>
+		<a href="https://www.codechef.com/users/richacode">
+		   codechef.com/users/richacode
+			<img src="icon/codechefi.png" alt="codechef.com" class="contact_icons_codechef">
+		</a>
+    <br/>
+	<br/>
+		<a  href="http://yourshot.nationalgeographic.com/profile/549611/">
+		     yourshot.nationalgeographic.com/profile
+			 <img src="icon/yourshot.png" alt="YourShot" class="contact_icons_yourshot">
+		</a>
+		<br/>
+		
+		</section>
+      </div>
+   
+   </div>
+  
+  
+  <nav class="navigation">
+	   <ul>
+	     <li><a href="portfolio.html"><span>Home</span> <span class="fa fa-home"></span></a></li>		 
+	     <li><a href="#profile_1" ><span>Profile</span> <span class="fa fa-female"></span></a></li>
+	     <li><a href="#abilities_2"><span>Abilities</span> <span class="fa fa-paint-brush"></span></a></li>
+		 <li><a href="#projects_3"><span>Projects</span> <span class="fa fa-file-code-o"></span></a></li>
+		 <li><a href="#awards_4"><span>Awards</span> <span class="fa fa-trophy"></span></a></li>		 
+	     <li><a href="#courses_5"><span>Courses</span> <span class="fa fa-bookmark"></span></a></li>		 
+	     <li><a href="#contact_6"><span>Contacts</span> <span class="fa fa-phone"></span></a></li>		 
+	   </ul>
+ </nav>  
+   
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script src="js/animsition/animsition.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/scrollToTarget.js"></script><!-- keep it here only -->
+
+</body>
