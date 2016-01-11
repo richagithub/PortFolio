@@ -1,8 +1,8 @@
 function loading(){
 
 var imgarr=["images/img1.jpg","images/img2.jpg","images/img3.JPG","images/img4.JPG"
-            ,"images/img5.jpg","images/img6.jpg","images/img7.jpg","images/img8.jpg"
-			,"images/img9.jpg","images/img10.jpg","images/img11.jpg","images/img12.jpg"];
+            ,"images/img5.JPG","images/img6.JPG","images/img7.JPG","images/img8.JPG"
+			,"images/img9.JPG","images/img10.JPG","images/img11.JPG","images/img12.JPG"];
 var spot=Math.floor(Math.random()*imgarr.length);
 document.body.style.backgroundImage="url("+imgarr[spot]+")";
 /*  
